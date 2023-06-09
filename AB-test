@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Привет! Пройди наш интересный тест и получи ваучер на пополнение счета в конце</title>
+  <style>
+    /* Стилизация обертки страницы */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Занимает 100% высоты экрана */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Стилизация заголовка */
+    h1 {
+      font-family: Arial, sans-serif; /* Используем шрифт без засечек Arial */
+      text-align: center;
+      margin-bottom: 20px; /* Добавляем отступ после заголовка */
+    }
+
+    /* Стилизация кнопки */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(88.93deg, #31BC69 1.83%, #089E4E 98.17%);
+      /* Shadow/Functional-Green */
+      box-shadow: 0px 2px 4px rgba(14, 161, 81, 0.15), 0px 4px 18px rgba(14, 161, 81, 0.15);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Привет! Пройди наш интересный тест <br> и получи ваучер на пополнение счета в конце</h1>
+  
+    <button class="btn" onclick="runABTest()">Пройти тест</button>
+  </div>
+  
+  <script>
+    function runABTest() {
+      // Генерация случайного числа от 0 до 1
+      var random = Math.random();
+      
+      // Разделение аудитории на две группы по условию случайного числа
+      if (random < 0.5) {
+        // Группа A - первая ссылка
+        window.location.href = "https://1win.pro/bets/home";
+      } else {
+        // Группа B - вторая ссылка
+        window.location.href = "https://slotoking.ua/";
+      }
+    }
+  </script>
+</body>
+</html>
